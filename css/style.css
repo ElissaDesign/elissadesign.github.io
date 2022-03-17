@@ -62,9 +62,10 @@ nav span{
     width: 70px;
     cursor: pointer;
 }
-ul{
+nav .nav-container ul{
     flex: 1;
     text-align: right;
+    
 }
 ul li{
     display: inline-block;
@@ -100,7 +101,85 @@ ul li a{
     color: #E5E5E5;
 }
 
+.nav-container .fa{
+    display: none;
+}
+nav .fa{
+    display: none;
+}
 
+@media(max-width: 961px) {
+    ul li{
+    margin: 0 8px;
+    font-size: 12px;
+    }
+    .header-content h1{
+        font-size: 40px;
+    }
+    .nav-container .fa{
+        display: none;
+    }
+    nav .fa{
+        display: none;
+    }
+}
+@media(max-width: 760px) {
+    ul li{
+        display: block;
+        font-size: 16px;
+        text-align: left;
+        line-height: 40px;
+    }
+    .nav-container{
+        position: absolute;
+        background-color: #3359DF;
+        height: 80vh;
+        width: 200px;
+        top: -80vh;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        padding: 20px;
+        transition: 1s;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-container .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-container ul{
+        padding: 30px;
+    }
+
+}
+@media(max-width: 535px){
+    .header-content h1{
+        font-size: 30px;
+    }
+}
+@media(max-width: 280px){
+    nav h1{
+        font-size: 20px;
+    }
+    .online-icon{
+        width: 50px;
+        margin-left: -15px;
+    }
+}
 /* -----------------styling section 1 --------------------------*/
 
 
@@ -144,6 +223,33 @@ section{
     margin-top: 50px;
  }
 
+
+ @media(max-width: 760px){
+    .container-header{
+        display: block;
+    }
+    .container-header div{
+        margin-bottom: 40px;
+    }
+    .btn{
+        left: 35%;
+        transform: translateY(-35%);
+        margin-top: 40px;
+     }
+ }
+ @media(max-width: 435px){
+    .btn{
+        left: 25%;
+        transform: translateY(-25%);
+        margin-top: 20px;
+     }
+ }
+
+
+
+
+
+
  /* ------------------section-2----------------------- */
  .template-container{
      display: flex;
@@ -173,6 +279,37 @@ section{
      font-size: small;
  }
 
+ @media(max-width: 1072px){
+    .template-container .template-img{
+        width: 400px;
+    }
+ }
+ @media(max-width: 885px){
+    .template-container .template-img{
+        width: 350px;
+    }
+    .btn-colored-responsive{
+        width: 140px;
+        padding: 10px;
+    }
+ }
+ @media(max-width: 822px){
+    .template-container{
+        display: block;
+        align-items: center;
+    }
+    .template-container .template-img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .template-container .template-text{
+        text-align: center;
+    }
+    .template-container .template-text h1 span{
+        font-size: 10px;
+    }
+ }
+
 
  /* ------------------section-3 Portfolio----------------------- */
 
@@ -181,7 +318,7 @@ section{
      align-items: center;
  }
  .portfolio-container .portfolio-img{
-     width: 250px;
+     width: 100%;
  }
  .portfolio-container .portfolio-text{
      margin-left: 40px;
@@ -211,7 +348,36 @@ section{
      align-items: center;
  }
 
-
+ @media(max-width: 1200px){
+    .portfolio-container .portfolio-img{
+        width: 80%;
+    }
+ }
+ @media(max-width: 1130px){
+    .portfolio-container .portfolio-img{
+        width: 60%;
+    }
+ }
+ @media(max-width: 610px){
+    .portfolio-container{
+        display: block;
+    }
+    .portfolio-container .portfolio-img{
+        width: 100%;
+    }
+    .portfolio-container .portfolio-text{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .portfolio-text .btn-container{
+        display: block;
+ }
+ }
+ @media(max-width: 380px){
+    .portfolio-text .btn-container .btn-porfolio-colored{
+        display: none;
+ }
+ }
 /* -------Button Portfolio */
  .btn-container .btn-porfolio-colored{
     width: 120px;
@@ -245,6 +411,7 @@ section{
 
 
 .pricing-section{
+    width: 100%;
     background-color: #3359DF;
 }
 .pricing-section h1{
@@ -254,9 +421,10 @@ section{
     color: #fff;
 }
 .pricing-container{
+    width: 80%;
     display: flex;
     align-items: center;
-    margin: 60px 10% 130px 10%;
+    margin: 60px auto 130px auto;
 }
 .pricing-container .card{
     width: 300px;
@@ -311,8 +479,78 @@ section{
     text-align: center;
     color:#D0CDE1;
 }
+@media(max-width: 1070px){
+    .pricing-container .card .head, .pricing-container .card .head-1, .pricing-container .card .head-2{
+        width: 250px;
+    } 
+}
+
+@media(max-width: 930px){
+    .pricing-container .card .head, .pricing-container .card .head-1, .pricing-container .card .head-2{
+        width: 200px;
+    } 
+}
+@media(max-width: 750px){
+    .pricing-container{
+        display: block;
+    }
+    .pricing-container .card .head, .pricing-container .card .head-1, .pricing-container .card .head-2{
+        width: 300px;
+    } 
+@media(max-width: 750px){
+    .pricing-container .card{
+        margin-bottom: 20px;
+        margin-left: 140px;
+    }
+@media(max-width: 610px){
+    .pricing-container .card{
+        margin-left: 100px;
+    }
+@media(max-width: 540px){
+
+    .pricing-container .card{
+        margin-left: 60px;
+    }
+}
+@media(max-width: 455px){
+    .pricing-container .card{
+        margin-left: 40px;
+    }
+}
+@media(max-width: 420px){
+    .pricing-container .card{
+        margin-left: 20px;
+    }
+}
+@media(max-width: 380px){
+    .pricing-container .card{
+        margin-left: 10px;
+    }
+}
+@media(max-width: 360px){
+    .pricing-container .card{
+        margin-left: 0px;
+    }
+}
+@media(max-width: 350px){
+    .pricing-container .card{
+        margin-left: -10px;
+    }
+}
+@media(max-width: 330px){
+    .pricing-container .card{
+        margin-left: -20px;
+    }
+}
+@media(max-width: 310px){
+    .pricing-container .card{
+        margin-left: -25px;
+    }
+}
+
 
 /* ---------------------Contact-Section------------------------ */
+
 .contact-section{
     width: 80%;
     margin: 0 auto;

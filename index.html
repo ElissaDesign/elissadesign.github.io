@@ -4,25 +4,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
     <title>ElissaDesign || Resume</title>
 </head>
+
 <body>
+
     <header>
        <nav>
            <h1 class="logo"><span>Elissa</span>Design</h1>
            <img src="images/online.png" alt="online icon" class="online-icon">
-           <ul>
-               <li><a href="#">PORTFOLIO</a></li>
-               <li><a href="#">PRICING</a></li>
-               <li><a href="#">BLOG</a></li>
-               <li><a href="#">SIGN IN</a></li>
-               <li class="sign-up"><a href="#">SIGN UP</a></li>
-           </ul>
+           <div class="nav-container" id="navContainer">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">PRICING</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">SIGN IN</a></li>
+                    <li class="sign-up"><a href="#">SIGN UP</a></li>
+                </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()" ></i>
        </nav>
        <div class="header-content">
            <h1>WEB,GRAPHICS DESIGN & <br> WEB APP DEVELOPMENT</h1>
-           <p>Specializing in custom theme development. If you're a business <br> seeking a web presence or are looking to hire, contact me <a href="#"> here</a>.</p>
+           <p>Specializing in custom theme development. If you're a business <br> seeking a web presence or are looking
+             to hire, contact me <a href="#"> here</a>.</p>
            <button type="button" class="btn-colored">Get Started</button>
        </div>
     </header>
@@ -51,7 +60,7 @@
         <button type="button" class="btn-colorless btn">Learn more</button>
     </section>
 
-    <hr class="horizontal-line">
+<hr>
 
 
 <!-- ------------section-2 Template-------------------------- -->
@@ -63,13 +72,13 @@
             <div class="template-text">
                 <h1>Markdesign.io <span>recommended</span></h1>
                 <p>Collect client feedback and report bugs into Jira, Trello, Asana, Github directly from your site with screenshots, annotations, console logs, and more.</p>
-                <button type="button" class="btn-colored">Get free trial</button>
+                <button type="button" class="btn-colored btn-colored-responsive">Get free trial</button>
             </div>
         </div>
     </section>
 
 
-    <hr>
+<hr>
 
 
 
@@ -78,7 +87,7 @@
 
     <section>
         <div class="Portfolio-container">
-            <img src="images/Portfolio.svg.png" alt="Template image" class="portolio-img">
+            <img src="images/Portfolio.svg.png" alt="Template image" class="portfolio-img">
             <div class="portfolio-text">
                 <h1>Business Agance <span>2022</span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non varius nec nunc malesuada et sed gravida  </p>
@@ -92,13 +101,13 @@
         </div>
     </section>
 
-    <hr>
+<hr>
 
 
 
     <section>
         <div class="Portfolio-container">
-            <img src="images/Music App.png" alt="Template image" class="portolio-img">
+            <img src="images/Music App.png" alt="Template image" class="portfolio-img">
             <div class="portfolio-text">
                 <h1>Music App <span>2022</span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non varius nec nunc malesuada et sed gravida  </p>
@@ -113,13 +122,13 @@
     </section>
 
 
-    <hr>
+<hr>
 
 
 
     <section>
         <div class="Portfolio-container">
-            <img src="images/Portfolio.svg.png" alt="Template image" class="portolio-img">
+            <img src="images/Portfolio.svg.png" alt="Template image" class="portfolio-img">
             <div class="portfolio-text">
                 <h1>Tour Agance <span>2022</span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non varius nec nunc malesuada et sed gravida  </p>
@@ -133,12 +142,12 @@
         </div>
     </section>
 
-    <hr>
+<hr>
   
 
     <section>
         <div class="Portfolio-container">
-            <img src="images/Music App.png" alt="Template image" class="portolio-img">
+            <img src="images/Music App.png" alt="Template image" class="portfolio-img">
             <div class="portfolio-text">
                 <h1>Tour Agance <span>2022</span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non varius nec nunc malesuada et sed gravida  </p>
@@ -261,6 +270,15 @@
 
    
 
-    
+    <script>
+        var navContainer = document.getElementById("navContainer");
+
+        function showMenu(){
+            navContainer.style.top = "0";
+        }
+        function hideMenu(){
+            navContainer.style.top = "-80vh";
+        }
+    </script>
 </body>
 </html>
