@@ -16,6 +16,12 @@
     font-size: 16px;
     margin-top: 25px;
     font-weight: 300;
+    transition: .7s;
+}
+.btn-colored:hover{
+    background-color: #fff;
+    border: 1px solid #3359DF;
+    color: #3359DF;
 }
 /* -------------------------------------------------------- */
 
@@ -140,6 +146,9 @@ nav .fa{
         font-size: 16px;
         text-align: left;
         line-height: 40px;
+    }
+    ul li a{
+        color: #fff;
     }
     .nav-container{
         position: absolute;
@@ -299,6 +308,7 @@ nav .fa{
     .about-text{
         text-align: center;
         padding-top: 70px;
+        padding-left: 0px;
     }
 }
 

@@ -17,6 +17,12 @@
     font-size: 16px;
     margin-top: 25px;
     font-weight: 300;
+    transition: .7s;
+}
+.btn-colored:hover{
+    background-color: #fff;
+    border: 1px solid #3359DF;
+    color: #3359DF;
 }
 .btn-colorless{
     width: 170px;
@@ -28,6 +34,12 @@
     font-size: 16px;
     margin-top: 25px;
     font-weight: 300;
+    transition: .7s;
+}
+.btn-colorless:hover{
+    background-color: #3359DF;
+    border: none;
+    color: #fff;
 }
 
 /* -------------------------------------------------------- */
@@ -410,6 +422,12 @@ section{
     font-size: 16px;
     margin-top: 25px;
     font-weight: 300;
+    transition: .7s;
+ }
+ .btn-container .btn-porfolio-colored:hover{
+    background-color: #fff;
+    border: 1px solid #3359DF;
+    color: #3359DF;
  }
  .btn-container .btn-portfolio-colorless{
     width: 120px;
@@ -422,6 +440,11 @@ section{
     margin-top: 25px;
     margin-left: 20px;
     font-weight: 300;
+ }
+ .btn-container .btn-portfolio-colorless:hover{
+    background-color: #3359DF;
+    border:none;
+    color: #fff;
  }
 /* ---------------------- */
 
@@ -637,6 +660,10 @@ textarea{
 .social-media-section a{
     text-decoration: none;
    color: rgba(0, 0, 0, 0.61);
+   transition: .5s;
+}
+.social-media-section a:hover{
+    color: #3359DF;
 }
 /* ---------------------------------------------- */
 
